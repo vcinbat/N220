@@ -134,12 +134,12 @@ document.getElementById("newFProp").innerHTML += `<br /> ${JSON.stringify(
   person
 )}`;
 
-// 5. Print a sentence using our object 
+// 5. Print a sentence using our object
 console.log(`${person.getFullName()} is ${person.age} years old. `);
 
 // 6. Add a method to an existing object
 person.isASenior = function () {
-  return this.age >= 65; 
+  return this.age >= 65;
 };
 console.log(person.isASenior());
 
