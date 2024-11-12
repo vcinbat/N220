@@ -26,7 +26,7 @@ function addToBox() {
 }
 
 function clickBox(e) {
-  if (e.currentTarget.style.backgroundColor == "lightcoral") {
+  if (e.currentTarget.style.backgroundColor === "lightcoral") {
     e.currentTarget.style.backgroundColor = "lightgray";
   } else {
     e.currentTarget.style.backgroundColor = "lightcoral";
@@ -37,8 +37,6 @@ function toggleTheBoxHidden() {
   if (theBoxRef.style.display !== "none") {
     theBoxRef.style.display = "none";
   } else {
-    theBoxRef.style.display = "block";
+    theBoxRef.style.display = "grid";
   }
 }
-
-//theBoxRef.outerHTML += `<button onclick = "toggleTheBoxHidden()">Toggle Hidden</button>`;
