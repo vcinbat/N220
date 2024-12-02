@@ -12,10 +12,10 @@ https://github.com/vcinbat/N220/blob/main/final-project/readme.md
 
 **DOM References**:
 
-- Username input field: `<input id="username">`
-- Password input field: `<input id="password">`
-- Generate Username button: `<button id="generate-username">`
-- Login button: `<button id="login">`
+- Username input field: <input id="username">
+- Password input field: <input id="password">
+- Generate Username button: <button id="generate-username">
+- Login button: <button id="login">
 
 **Logic**:
 
@@ -28,8 +28,8 @@ https://github.com/vcinbat/N220/blob/main/final-project/readme.md
 
 **Data Types**:
 
-- `username`: `String`
-- `password`: `String`
+- username : String
+- password : String
 
 **Events**:
 
@@ -45,8 +45,8 @@ https://github.com/vcinbat/N220/blob/main/final-project/readme.md
 
 **DOM References**:
 
-- Generate Username button: `<button id="generate-username">`
-- Username display area: `<input id="username">`
+- Generate Username button: <button id="generate-username">
+- Username display area: <input id="username">
 
 **Logic**:
 
@@ -57,8 +57,8 @@ https://github.com/vcinbat/N220/blob/main/final-project/readme.md
 
 **Data Types**:
 
-- `generatedUsername`: `String`
-- `characterPool`: `Array` containing allowed characters.
+- generatedUsername: String
+- characterPool : Array containing allowed characters.
 
 **Events**:
 
@@ -72,8 +72,8 @@ https://github.com/vcinbat/N220/blob/main/final-project/readme.md
 
 **DOM References**:
 
-- Welcome message container: `<div id="welcome-message">`
-- User profile section: `<div id="user-profile">`
+- Welcome message container: <div id="welcome-message">
+- User profile section: <div id="user-profile">
 
 **Logic**:
 
@@ -82,8 +82,8 @@ https://github.com/vcinbat/N220/blob/main/final-project/readme.md
 
 **Data Types**:
 
-- `username`: `String` (stored after login).
-- `session`: `Object` for tracking logged-in state.
+- username : String (stored after login).
+- session: Object for tracking logged-in state.
 
 **Events**:
 
@@ -97,7 +97,7 @@ https://github.com/vcinbat/N220/blob/main/final-project/readme.md
 
 function generateUsername() {
 const randomPart = Math.random().toString(36).substring(2, 8);
-const username = `User${randomPart}`;
+const username = User${randomPart};
 document.getElementById('username').value = username;
 }
 document.getElementById('generate-username').addEventListener('click', generateUsername);
