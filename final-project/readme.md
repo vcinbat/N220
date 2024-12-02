@@ -6,7 +6,7 @@ Random Username Generator with Login Form
 
 https://github.com/vcinbat/N220/blob/main/final-project/readme.md
 
-### Major Features
+## Major Features
 
 ### 1. Login Form
 
@@ -51,8 +51,8 @@ https://github.com/vcinbat/N220/blob/main/final-project/readme.md
 **Logic**:
 
 - Randomly generate a username:
-  - Create a sequence of 6 alphanumeric characters.
-  - Prefix the sequence with "User" for uniqueness.
+  - Create a string of 6 alphanumeric characters.
+  - Prefix the string with "User" for uniqueness.
 - If the username input field is empty, populate it with the generated username.
 
 **Data Types**:
@@ -68,36 +68,38 @@ https://github.com/vcinbat/N220/blob/main/final-project/readme.md
 
 ---
 
-### 3. Dashboard
+### 3. Dashboard (Dynamic Welcome Message)
 
 **DOM References**:
 
-- Welcome message container: `<div id="welcome-message">`
+- Welcome message section: `<div id="welcome-message">`
 - User profile section: `<div id="user-profile">`
 
 **Logic**:
 
 - Display a welcome message that includes the user's username after login.
-- Include options to edit the username or log out.
+- The username is retrieved from the login input and is only valid during the session (stored in a JavaScript variable).
 
 **Data Types**:
 
-- `username`: `String` (stored after login).
-- `session`: `Object` for tracking logged-in state.
+- `username`: `String`
 
 **Events**:
 
-- On page load:
-  - Check if a user is logged in.
-  - Display the username in the welcome message.
+- On "Login" button click:
+  - Display a personalized welcome message based on the entered or generated username.
 
 ---
 
 ## Example Code Snippet: Random Username Generation
 
+```js
 function generateUsername() {
-const randomPart = Math.random().toString(36).substring(2, 8);
-const username = `User${randomPart}`;
-document.getElementById('username').value = username;
+  const randomPart = Math.random().toString(36).substring(2, 8);
+  const username = `User${randomPart}`;
+  document.getElementById("username").value = username;
 }
-document.getElementById('generate-username').addEventListener('click', generateUsername);
+document
+  .getElementById("generate-username")
+  .addEventListener("click", generateUsername);
+```
