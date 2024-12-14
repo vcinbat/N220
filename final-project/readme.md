@@ -6,7 +6,7 @@ Random Username Generator with Login Form
 
 ### GitHub Link
 
-https://github.com/vcinbat/N220/blob/main/final-project/readme.md
+https://github.com/vcinbat/N220/tree/main/final-project
 
 ## Major Features
 
